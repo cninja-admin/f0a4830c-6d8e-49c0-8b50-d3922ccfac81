@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Artist
+        </title>
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="SingleArtistStyle.css">
+        <!-- Font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/ccb99ac582.js" crossorigin="anonymous"></script>
+       <meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+    <body>
+        <!-- Navbar -->
+          <!--Desktop-Navbar -->
+        <header class="main-header">
+           <nav id="lg-navbar" >
+               <!-- horizontal list -->
+                <ul class="horizontal-list">
+                    <!-- logo img -->
+                    <li><a href="index.html"><img class="logo-img" src="images/img-52.png" alt="logo"></a></li>
+                    <li><a class="main-header-btn" href="#fav">Favourites</a></li>
+                    <!-- search bar -->
+                    <li class="nav-form">
+                        <form action="">
+                            <button type="submit" class="search-btn" ><i class="fas fa-search search-btn-img"></i></button>
+                            <input type="text" name="search" id="search-bar" placeholder="Search..." >
+                            <i class="fas fa-microphone mic-btn"></i>
+                        </form>
+                    </li>
+                    <!-- Bell icon -->
+                    <li><a class="main-header-btn" href="#"><i class="fas fa-bell bell-icon"></i></a></li>
+                    <!-- profile image -->
+                    <li><a href="#"><img src="images/IMG_4704 2.jpg" alt="profile-photo" class="profile-img" style="width: 3.6rem;"></a></li>
+                </ul>
+           </nav>    
+        </header>
+        <!-- Mobile-Navbar -->
+        <header class="m-header">
+            <nav id="m-navbar">
+                <ul class="horizontal-list">
+                    <!-- logo img -->
+                    <li><a href="index.html"><img class="logo-img" src="images/img-52.png" style="font-size:3.5rem; margin-left: 5px; margin-top: 10px;" alt=""></a></li>
+                    <!-- navbar menu button -->
+                    <li><a href="#m-nav-list"><i class="fas fa-bars" style="font-size: 36px;"></i></a></li>
+                </ul>
+            </nav>
+            <!-- vertical list -->
+            <div id="m-nav-list">
+                <ul>
+                    <!-- menu close buttom -->
+                   <li><a href="#" >Close</a></li>
+                   <li><a href="fav">Favourites</a></li>
+                   <!-- mobile -search bar -->
+                   <li class="nav-form">
+                    <form action="">
+                        <button type="submit" class="search-btn" ><i class="fas fa-search search-btn-img"></i></button>
+                        <input type="text" name="search" id="search-bar" placeholder="Search..." >
+                        <i class="fas fa-microphone mic-btn"></i>
+                    </form>
+                </li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Body -->
+        <div class="main-content">
+            <main>
+                <!-- artist section -->
+                <section class="artist-box">
+                    <!-- artist image -->
+                    <div class="artist-img">
+                        <img src="images/img-36.jpeg" alt="">
+                    </div>
+                    <!-- artist information -->
+                    <div class="artist-details">
+                        <!-- artist name -->
+                        <div class="artist-name">
+                            Diljit Dosanjh
+                        </div>
+                        <!-- artist origin -->
+                        <div class="artist-origin">
+                            Punjabi Singer
+                        </div>
+                        <!-- artist followers -->
+                        <div class="artist-followers">
+                            851&nbsp;Followers
+                        </div>
+                        <!-- about artist -->
+                        <div class="artist-desc">
+                            Diljit Dosanjh (born 6 January 1984) is an Indian singer-songwriter, actor and television presenter who works in Punjabi and Hindi cinema. He is recognised as one of the leading artists in the Indian music industry
+                        </div>
+                        <!-- Play/follow btn -->
+                       <div class="play-follow-btn">
+                        <button class="artist-btn" type="submit">
+                            Play All
+                        </button>
+                        <a href="" class="follow-artist-btn">Follow</a>
+                       </div>
+                        <div class="artist-tracks-albums opacity-8">
+                            247&nbsp;Tracks&nbsp;|&nbsp;128&nbsp;Albums
+                        </div>
+                    </div>
+                </section>
+                <!-- songs by the artist -->
+                <section class="artist-songs">
+                    <!-- song box for each track -->
+                    <div class="song-box">
+                        <!-- song no in the queue -->
+                        <div class="song-no opacity-8">
+                            01
+                        </div>
+                        <!-- song image and play button on hover -->
+                        <div class="song-cover">
+                            <!-- targets bottom music bar -->
+                            <a href="#music-bar">
+                                <div class="song-img">
+                                    <img src="images/img-37.jpeg" alt="song-cover-img">
+                                </div>
+                                <div class="play-btn">
+                                    <a href="#music-bar"> <i class="fas fa-play"></i> </a>
+                                </div>
+                            </a>
+                        </div> 
+                        <!-- song details -->
+                        <div class="song-details">
+                            <div class="song-name">
+                                Jind Mahi
+                            </div>
+                            <div class="song-author">
+                                Diljit Dosanjh
+                            </div>
+                        </div>
+                        <!-- song like and add to queue button -->
+                        <div class="like-add-btns">
+                            <div class="like-btn">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="add-btn">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-no opacity-8">
+                            02
+                        </div>
+                        <div class="song-cover">
+                           <a href="#music-bar">
+                                <div class="song-img">
+                                    <img src="images/img-38.jpeg" alt="song-cover-img">
+                                </div>
+                                <div class="play-btn">
+                                    <a href="#music-bar"> <i class="fas fa-play"></i> </a>
+                                </div>
+                           </a>
+                        </div> 
+                        <div class="song-details">
+                            <div class="song-name">
+                                Stranger
+                            </div>
+                            <div class="song-author">
+                                Diljit Dosanjh
+                            </div>
+                        </div>
+                        <div class="like-add-btns">
+                            <div class="like-btn">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="add-btn">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-no opacity-8">
+                            03
+                        </div>
+                        <div class="song-cover">
+                           <a href="#music-bar">
+                                <div class="song-img">
+                                    <img src="images/img-39.jpeg" alt="song-cover-img">
+                                </div>
+                                <div class="play-btn">
+                                    <a href="#music-bar"> <i class="fas fa-play"></i> </a>
+                                </div>
+                           </a>
+                        </div> 
+                        <div class="song-details">
+                            <div class="song-name">
+                                Patiala Peg
+                            </div>
+                            <div class="song-author">
+                                Diljit Dosanjh
+                            </div>
+                        </div>
+                        <div class="like-add-btns">
+                            <div class="like-btn">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="add-btn">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-no opacity-8">
+                            04
+                        </div>
+                        <div class="song-cover">
+                            <a href="#music-bar">
+                                <div class="song-img">
+                                    <img src="images/img-40.jpeg" alt="song-cover-img">
+                                </div>
+                                <div class="play-btn">
+                                    <a href="#music-bar"> <i class="fas fa-play"></i> </a>
+                                </div>
+                            </a>
+                        </div> 
+                        <div class="song-details">
+                            <div class="song-name">
+                                Big Scene
+                            </div>
+                            <div class="song-author">
+                                Diljit Dosanjh
+                            </div>
+                        </div>
+                        <div class="like-add-btns">
+                            <div class="like-btn">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="add-btn">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-no opacity-8">
+                            05
+                        </div>
+                        <div class="song-cover">
+                            <a href="#music-bar">
+                                <div class="song-img">
+                                    <img src="images/img-47.jpeg" alt="song-cover-img">
+                                </div>
+                                <div class="play-btn">
+                                    <a href="#music-bar"> <i class="fas fa-play"></i> </a>
+                                </div>
+                            </a>
+                        </div> 
+                        <div class="song-details">
+                            <div class="song-name">
+                                Moon child
+                            </div>
+                            <div class="song-author">
+                                Diljit Dosanjh
+                            </div>
+                        </div>
+                        <div class="like-add-btns">
+                            <div class="like-btn">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="add-btn">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-no opacity-8">
+                            06
+                        </div>
+                        <div class="song-cover">
+                            <a href="#music-bar">
+                                <div class="song-img">
+                                    <img src="images/img-44.jpeg" alt="song-cover-img">
+                                </div>
+                                <div class="play-btn">
+                                    <a href="#music-bar"> <i class="fas fa-play"></i> </a>
+                                </div>
+                            </a>
+                        </div> 
+                        <div class="song-details">
+                            <div class="song-name">
+                                Lover Boy
+                            </div>
+                            <div class="song-author">
+                                Diljit Dosanjh
+                            </div>
+                        </div>
+                        <div class="like-add-btns">
+                            <div class="like-btn">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="add-btn">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-no opacity-8">
+                            07
+                        </div>
+                        <div class="song-cover">
+                            <a href="#music-bar">
+                                <div class="song-img">
+                                    <img src="images/img-46.jpeg" alt="song-cover-img">
+                                </div>
+                                <div class="play-btn">
+                                    <a href="#music-bar"> <i class="fas fa-play"></i> </a>
+                                </div>
+                            </a>
+                        </div> 
+                        <div class="song-details">
+                            <div class="song-name">
+                                Born to Shine
+                            </div>
+                            <div class="song-author">
+                                Diljit Dosanjh
+                            </div>
+                        </div>
+                        <div class="like-add-btns">
+                            <div class="like-btn">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="add-btn">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- aside section(right side) -->
+            <aside>
+                <!-- similar artist section -->
+                <section class="similar-artists">
+                    <!-- section header -->
+                    <div class="section-header">
+                        <div class="section-heading">
+                            Similar Artists
+                        </div>
+                        <div class="section-utilities">
+                            View All
+                        </div>
+                    </div>
+                    <!-- display for similar artists -->
+                    <div class="similar-artist-display">
+                        <!-- box for each similar artist -->
+                        <div class="similar-artist-box">
+                            <!-- similar artst image -->
+                            <div class="similar-artist-img">
+                                <img src="images/img-49.jpeg" alt="">
+                            </div>
+                            <!-- similar artist details -->
+                            <div class="similar-artist-details">
+                                <div class="similar-song-name">
+                                    Necklace
+                                </div>
+                                <div class="similar-song-author opacity-8">
+                                    Amrinder Gill
+                                </div>
+                            </div>
+                            <!-- dropdown menu for similar artist -->
+                            <div class="similar-artist-other">
+                                <div class="dropdown">
+                                    <!-- dropdown button -->
+                                    <button class="dropbtn"> <i class="fas fa-ellipsis-h"></i></button>
+                                   <!-- dropdown list -->
+                                    <div class="dropdown-content">
+                                        <a href="#"> <span><i class="fas fa-play"></i></span> &nbsp;Play&nbsp;Now</a>
+                                        <a href="#"> <span><i class="fas fa-plus"></i></span> &nbsp;Add&nbsp;To&nbsp;Queue</a>
+                                    </div>
+                                </div>
+                                <div class="similar-song-duration opacity-8">
+                                    4:44
+                                </div>
+                            </div>
+                        </div>
+                        <div class="similar-artist-box">
+                            <div class="similar-artist-img">
+                                <img src="images/img-50.jpeg" alt="">
+                            </div>
+                            <div class="similar-artist-details">
+                                <div class="similar-song-name">
+                                   Leekan
+                                </div>
+                                <div class="similar-song-author opacity-8">
+                                    Amrinder Gill
+                                </div>
+                            </div>
+                            <div class="similar-artist-other">
+                                <div class="dropdown">
+                                    <button class="dropbtn"> <i class="fas fa-ellipsis-h"></i></button>
+                                    <div class="dropdown-content">
+                                        <a href="#"> <span><i class="fas fa-play"></i></span> &nbsp;Play&nbsp;Now</a>
+                                        <a href="#"> <span><i class="fas fa-plus"></i></span> &nbsp;Add&nbsp;To&nbsp;Queue</a>
+                                    </div>
+                                </div>
+                                <div class="similar-song-duration opacity-8">
+                                    4:44
+                                </div>
+                            </div>
+                        </div>
+                        <div class="similar-artist-box">
+                            <div class="similar-artist-img">
+                                <img src="images/img-51.jpeg" alt="">
+                            </div>
+                            <div class="similar-artist-details">
+                                <div class="similar-song-name">
+                                    Dildarian
+                                </div>
+                                <div class="similar-song-author opacity-8">
+                                    Amrinder Gill
+                                </div>
+                            </div>
+                            <div class="similar-artist-other">
+                                <div class="dropdown">
+                                    <button class="dropbtn"> <i class="fas fa-ellipsis-h"></i></button>
+                                    <div class="dropdown-content">
+                                        <a href="#"> <span><i class="fas fa-play"></i></span> &nbsp;Play&nbsp;Now</a>
+                                        <a href="#"> <span><i class="fas fa-plus"></i></span> &nbsp;Add&nbsp;To&nbsp;Queue</a>
+                                    </div>
+                                </div>
+                                <div class="similar-song-duration opacity-8">
+                                    4:44
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- recently played section -->
+                <section class="recently-played">
+                    <!-- section header -->
+                    <div class="section-header">
+                        <div class="section-heading">
+                            Recently Played
+                        </div>
+                        <div class="section-utilities">
+                            View All
+                        </div>
+                    </div>
+                    <!-- display area for recently played tracks -->
+                    <div class="recently-played-display">
+                        <!-- box for each recently played track -->
+                        <div class="recent-song-box">
+                            <!-- recent song no in queue -->
+                            <div class="recent-song-no">
+                                01
+                            </div>
+                            <!-- recent song image -->
+                            <div class="recent-song-img">
+                                <img src="images/img-27.jpg" alt="recent-song-cover">
+                            </div>
+                            <!-- recent song details -->
+                            <div class="recent-song-details">
+                                <div class="recent-song-name">
+                                    Mirage
+                                </div>
+                                <div class="recent-song-author">
+                                    Else
+                                </div>
+                            </div>
+                            <!-- recent song like button -->
+                            <div class="recent-song-like-btn">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="recent-song-box">
+                            <div class="recent-song-no">
+                                02
+                            </div>
+                            <div class="recent-song-img">
+                                <img src="images/img-25.jpeg" alt="recent-song-cover">
+                            </div>
+                            <div class="recent-song-details">
+                                <div class="recent-song-name">
+                                    Mirage
+                                </div>
+                                <div class="recent-song-author">
+                                    Else
+                                </div>
+                            </div>
+                            <div class="recent-song-like-btn">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="recent-song-box">
+                            <div class="recent-song-no">
+                                03
+                            </div>
+                            <div class="recent-song-img">
+                                <img src="images/img-47.jpeg" alt="recent-song-cover">
+                            </div>
+                            <div class="recent-song-details">
+                                <div class="recent-song-name">
+                                    Mirage
+                                </div>
+                                <div class="recent-song-author">
+                                    Else
+                                </div>
+                            </div>
+                            <div class="recent-song-like-btn">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="recent-song-box">
+                            <div class="recent-song-no">
+                                04
+                            </div>
+                            <div class="recent-song-img">
+                                <img src="images/img-27.jpg" alt="recent-song-cover">
+                            </div>
+                            <div class="recent-song-details">
+                                <div class="recent-song-name">
+                                    Mirage
+                                </div>
+                                <div class="recent-song-author">
+                                    Else
+                                </div>
+                            </div>
+                            <div class="recent-song-like-btn">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="recent-song-box">
+                            <div class="recent-song-no">
+                                05
+                            </div>
+                            <div class="recent-song-img">
+                                <img src="images/img-28.jpeg" alt="recent-song-cover">
+                            </div>
+                            <div class="recent-song-details">
+                                <div class="recent-song-name">
+                                    Mirage
+                                </div>
+                                <div class="recent-song-author">
+                                    Else
+                                </div>
+                            </div>
+                            <div class="recent-song-like-btn">
+                                <i class=" far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="recent-song-box">
+                            <div class="recent-song-no">
+                                06
+                            </div>
+                            <div class="recent-song-img">
+                                <img src="images/img-25.jpeg" alt="recent-song-cover">
+                            </div>
+                            <div class="recent-song-details">
+                                <div class="recent-song-name">
+                                    Mirage
+                                </div>
+                                <div class="recent-song-author">
+                                    Else
+                                </div>
+                            </div>
+                            <div class="recent-song-like-btn">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </aside>
+        </div>
+         <!-- Bottom Music Bar -->
+         <div id="music-bar">
+            <!-- Current playing track -->
+            <div class="current-song">
+                <!-- Current song image -->
+                <div class="current-song-img">
+                    <a href="">
+                        <img src="images/img-26.jpg" alt="">
+                    </a>
+                </div>
+                <!-- current song details -->
+                <div class="current-song-details">
+                    <div class="current-song-name">
+                        Imagine
+                    </div>
+                    <div class="current-song-author">
+                        John Lennon
+                    </div>
+                </div>
+                <!-- current song like/dislike button -->
+                <div class="current-song-like-dislike">
+                    <div class="current-song-like">
+                      <a href="">  <i class="far fa-heart"></i></a>
+                    </div>
+                    <div class="current-song-dislike">
+                       <a href=""> <i class="fas fa-ban" ></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- controls  -->
+            <div class="music-controls">
+                <!-- shuffle button -->
+                <div class="shuffle-btn music-controls-sec">
+                    <a href="">
+                        <i class="fas fa-random"></i>
+                    </a>
+                </div>
+                <!-- previous button -->
+                <div class="previous-song-btn">
+                    <a href="">
+                        <i class="fas fa-step-backward"></i>
+                    </a>
+                </div>
+                <!-- backward button -->
+                <div class="backward-btn">
+                    <a href="">
+                        <i class="fas fa-backward"></i>
+                    </a>
+                </div>
+                <!-- Pause button -->
+                <div class="pause-btn">
+                    <a href="#">
+                        <i class="fas fa-pause-circle"></i>
+                    </a>
+                </div>
+                <!-- forward button -->
+                <div class="forward-btn">
+                    <a href="">
+                        <i class="fas fa-forward"></i>
+                    </a>
+                </div>
+                <!-- next button -->
+                <div class="next-btn">
+                    <a href="">
+                        <i class="fas fa-step-forward"></i>
+                    </a>
+                </div>  
+                <!-- Sync buttom -->
+                <div class="sync-btn music-controls-sec">
+                    <a href="">
+                        <i class="fas fa-sync"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Song bar(time-bar) -->
+            <div class="music-slider">
+                    <div class="start-time">
+                        0:00
+                    </div>
+                    <div>
+                        <input type="range" min="1" max="50" value="25"  id="myRange">
+                    </div>
+                    <div class="end-time">
+                        4:44
+                    </div>
+            </div>
+            <!-- volumne and other opts -->
+            <div class="music-opts">
+                <!-- add to queue icon -->
+                <div class="music-list-icon">
+                    <i class="fas fa-list-ul"></i>
+                </div>
+                <!-- external speaker icon -->
+                <div class="music-speaker-icon">
+                    <i class="fas fa-headphones-alt"></i>
+                </div>
+                <!-- volume icone -->
+                <div class="music-volume-icon">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <!-- volume controller -->
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="50" value="25"  id="myRange">
+                <div>
+            </div>
+        </div>
+
+    </body>
+</html>
